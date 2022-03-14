@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1#0">
+    <title>Student Form</title>
+    <style>
+        .main-form {
+        background-color: #ffa500;
+        width: 50%;
+        margin: 0 25%;
+        }
+        h2 {
+        text-align: center;
+        color: #111;
+        margin: -10px 0;
+        padding: 50px 0px 20px 0px ;
+        }
+        #line {
+        border: 1px solid #fff;
+        margin: 10px 20px;
+        }
+        #form {
+        width: 100%;
+        padding: 10px 0;
+
+        }
+        .type {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px 0;
+        }
+        .form{
+        padding: 5px 15px;
+        }
+        #textarea {
+        width: 100%;
+        height: 50px;
+        padding: 10px 0;   
+        }
+        #submit {
+        width: 100%;
+        background-color: #111;
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="main-form">
+        <h2>Student Registeration Form</h2>
+        <p id="line">
+
+        <div class="form">
+            <label>Firstname</label>
+            <input id="form" type="text" name="firstname" required placeholder="firstname">
+        </div>
+
+        <div class="form">
+            <label>Middlename</label>
+            <input id="form" type="text" name="middlename" required placeholder="middlename">
+        </div>
+
+        <div class="form">
+            <label>Lastname</label>
+            <input id="form" type="text" name="lastname" required placeholder="lastname">
+        </div>
+
+
+        <div class="form">
+            <label>Course:</label>
+            <select required>
+                <option>Course</option>
+                <option>React</option>
+                <option>Angular</option>
+                <option>C#</option>
+            </select>
+        </div>
+
+        <div class="form">
+            <label>Gender:</label><br>
+            <input type="radio" name="state" value="male">Male
+            <input type="radio" name="state" value="female">Female
+            <input type="radio" name="state" value="other">other
+            
+        </div>
+          
+        <div class="form">
+            <label>Phone:</label>
+            <input id="form" type="tel"  required placeholder="+91">
+            <input class="type" type="tel"  required placeholder="Phone Number">
+        </div>
+
+        <div class="form">
+            <label>Current Address:</label>
+            <textarea id="textarea" name="adress" placeholder="current Adress"></textarea>
+        </div>
+
+        <div class="form">
+            <label>Emial</label>
+            <input id="form" type="email" name="email" required placeholder="Enter Email">
+        </div>
+
+        <div class="form">
+            <label>Password</label>
+            <input id="form" type="password" pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){5})(?=(?:\D*\d){2})(?=.*[@#$%&]).*" required placeholder="Enter Password">
+        </div>
+
+        <div class="form">
+            <label>Re-type Password</label>
+            <input id="form" type="password" pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){5})(?=(?:\D*\d){2})(?=.*[@#$%&]).*" required placeholder="Retype Password">
+        </div>
+
+        <div class="form">
+            <input id="submit" type="submit" required value="Register">
+        </div>
+    </form>
+</body>
+</html>
